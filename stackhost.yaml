@@ -1,8 +1,0 @@
-runtime:
-  image: node:22
-
-commands:
-  package: ""
-  build:
-    - "npm install"
-  start: "npm run start"

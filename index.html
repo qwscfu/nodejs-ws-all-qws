@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Art of Fishing</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #2c3e50; line-height: 1.6; }
+  header {
+    background: linear-gradient(rgba(10,50,80,.7), rgba(10,50,80,.7)), url('https://images.unsplash.com/photo-1508233620467-f79f9e9d6f38?w=1600') center/cover no-repeat;
+    color: #fff; text-align: center; padding: 120px 20px;
+  }
+  header h1 { font-size: 3.5rem; margin-bottom: 10px; }
+  header p { font-size: 1.3rem; opacity: .9; }
+  nav { background: #0a3250; text-align: center; padding: 12px; position: sticky; top: 0; z-index: 10; }
+  nav a { color: #fff; text-decoration: none; margin: 0 18px; font-weight: 600; }
+  nav a:hover { color: #7fd4ff; }
+  section { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+  h2 { text-align: center; color: #0a3250; font-size: 2.2rem; margin-bottom: 30px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .card { background: #f4f9fc; border-radius: 10px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,.08); transition: transform .2s; }
+  .card:hover { transform: translateY(-5px); }
+  .card h3 { color: #0a3250; margin-bottom: 10px; }
+  .card .icon { font-size: 2.5rem; }
+  ul.tips { list-style: none; max-width: 700px; margin: 0 auto; }
+  ul.tips li { background: #f4f9fc; margin: 12px 0; padding: 16px 20px; border-left: 5px solid #1e88c7; border-radius: 4px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { padding: 12px; border-bottom: 1px solid #ddd; text-align: left; }
+  th { background: #0a3250; color: #fff; }
+  tr:hover td { background: #eaf4fa; }
+  footer { background: #0a3250; color: #fff; text-align: center; padding: 30px; margin-top: 40px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎣 The Art of Fishing</h1>
+  <p>Explore the joy, patience, and skill of one of the world's oldest pastimes</p>
+</header>
+
+<nav>
+  <a href="#types">Types</a>
+  <a href="#gear">Gear</a>
+  <a href="#tips">Tips</a>
+  <a href="#species">Common Species</a>
+</nav>
+
+<section id="types">
+  <h2>Types of Fishing</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🌊</div><h3>Freshwater Fishing</h3><p>Enjoy lakes, rivers, and ponds targeting bass, trout, and catfish. Perfect for beginners and family outings.</p></div>
+    <div class="card"><div class="icon">⚓</div><h3>Saltwater Fishing</h3><p>From shore casting to deep-sea charters, chase marlin, tuna, and snapper in the open ocean.</p></div>
+    <div class="card"><div class="icon">🪰</div><h3>Fly Fishing</h3><p>An elegant technique using artificial flies to catch trout and salmon in clear, flowing streams.</p></div>
+    <div class="card"><div class="icon">🧊</div><h3>Ice Fishing</h3><p>Drill a hole in frozen lakes and drop a line for perch and walleye during winter months.</p></div>
+  </div>
+</section>
+
+<section id="gear">
+  <h2>Essential Gear</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🎣</div><h3>Rod & Reel</h3><p>Choose a spinning combo for versatility, or a baitcaster for precision casting.</p></div>
+    <div class="card"><div class="icon">🪝</div><h3>Hooks & Lures</h3><p>Carry a variety of sizes — soft plastics, crankbaits, spinners, and live bait.</p></div>
+    <div class="card"><div class="icon">🧵</div><h3>Line</h3><p>Monofilament for stretch and forgiveness; braided line for strength and sensitivity.</p></div>
+    <div class="card"><div class="icon">🎒</div><h3>Tackle Box</h3><p>Keep pliers, sinkers, bobbers, and extra hooks organized and ready to go.</p></div>
+  </div>
+</section>
+
+<section id="tips">
+  <h2>Top Tips for Beginners</h2>
+  <ul class="tips">
+    <li><strong>Check the weather & water:</strong> Fish are more active during low-light hours — dawn and dusk are prime times.</li>
+    <li><strong>Match the hatch:</strong> Use lures and bait that resemble the local forage fish or insects.</li>
+    <li><strong>Be patient and quiet:</strong> Noise and sudden movements can spook fish quickly.</li>
+    <li><strong>Learn your local regulations:</strong> Always check licensing rules, size limits, and catch limits.</li>
+    <li><strong>Practice catch and release:</strong> Wet your hands, handle gently, and return fish quickly to preserve populations.</li>
+  </ul>
+</section>
+
+<section id="species">
+  <h2>Common Species</h2>
+  <table>
+    <tr><th>Species</th><th>Habitat</th><th>Best Bait</th><th>Season</th></tr>
+    <tr><td>Largemouth Bass</td><td>Lakes & ponds</td><td>Soft plastic worms</td><td>Spring–Fall</td></tr>
+    <tr><td>Rainbow Trout</td><td>Cold rivers & streams</td><td>Flies & spinners</td><td>Spring</td></tr>
+    <tr><td>Catfish</td><td>Rivers & reservoirs</td><td>Stink bait & cut fish</td><td>Summer nights</td></tr>
+    <tr><td>Bluefin Tuna</td><td>Open ocean</td><td>Live bait & jigs</td><td>Late summer</td></tr>
+    <tr><td>Perch</td><td>Lakes (under ice too)</td><td>Small jigs & worms</td><td>Winter</td></tr>
+  </table>
+</section>
+
+<footer>
+  <p>© 2026 The Art of Fishing — Tight lines and happy fishing! 🎣</p>
+</footer>
+
+</body>
+</html>
